@@ -1,3 +1,5 @@
+/*jshint esversion: 9 */
+
 let gulp = require('gulp');
 let cleanCSS = require('gulp-clean-css');
 
