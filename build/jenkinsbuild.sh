@@ -10,8 +10,10 @@ echo "checking nvm"
 bash ~/.nvm/nvm.sh;
 nvm --version || exit 1;
 
-nvm install node
+echo "Checking Node"
+nvm use default || nvm install node || nvm use default || exit 1
 
-nvm install -g gulp
+echo "Is Gulp Installed?"
+gulp --version || npm install -g gulp || exit 1;
 
-gulp --version
+gulp || exit 1
