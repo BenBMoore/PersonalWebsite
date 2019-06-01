@@ -6,14 +6,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 
 module.exports = {
-  mode:'development',
   entry: './src/index.js',
   output: {
     filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist')
-  },
-  devtool: 'inline-source-map',
-  
+  },  
   plugins: [
     new MiniCssExtractPlugin(),
     new CleanWebpackPlugin(),
@@ -47,9 +44,6 @@ module.exports = {
       ]
     }
   ]
-  },
-  devServer: {
-    contentBase: './dist'
   },
   optimization: {
     runtimeChunk: 'single',

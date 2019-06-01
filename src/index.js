@@ -6,3 +6,7 @@ import './images/background.jpg';
 
 // loads the Icon plugin
 UIkit.use(Icons);
+
+if(process.env.NODE_ENV !== 'production'){
+    console.log("We're not running in production mode!")
+}
