@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.prod.js",
-    "watch": "webpack --watch",
+    "watch": "webpack --watch --config webpack.config.dev.js",
     "start": "webpack-dev-server --open --config webpack.config.dev.js"
   },
   "repository": {
@@ -36,6 +36,6 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "uikit": "^3.3.7"
+    "uikit": "^3.3.8-dev.9309c161a"
   }
 }
